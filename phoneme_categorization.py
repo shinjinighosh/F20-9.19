@@ -69,7 +69,8 @@ x = -200
 # print(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
 
 # Q2.3 Challenge
-vot = [-50, -100, -150, -200]
+vot = [-50, -100, -150, -200, -25, 0, 25, 50, 75]
+vot.sort()
 posteriors = []
 for x in vot:
     posteriors.append(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
