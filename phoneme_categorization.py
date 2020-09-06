@@ -27,6 +27,9 @@ for x in vot:
 # print(posteriors)
 
 # plt.plot(vot, posteriors)
+# plt.xlabel('VOT')
+# plt.ylabel('Posteriors')
+# plt.title('Posteriors for VOTs')
 # plt.show()
 
 # Q2.1 for fun
@@ -53,6 +56,9 @@ for x in vot:
 # print(posteriors)
 
 # plt.plot(vot, posteriors)
+# plt.xlabel('VOT')
+# plt.ylabel('Posteriors')
+# plt.title('Posteriors for VOTs with Different Variances')
 # plt.show()
 
 # Q2.3
@@ -67,7 +73,10 @@ vot = [-50, -100, -150, -200]
 posteriors = []
 for x in vot:
     posteriors.append(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
-print(posteriors)
-
-plt.plot(vot, posteriors)
-plt.show()
+# print(posteriors)
+#
+# plt.plot(vot, posteriors)
+# plt.xlabel('VOT')
+# plt.ylabel('Posteriors')
+# plt.title('Posteriors for very low VOTs')
+# plt.show()
