@@ -17,17 +17,17 @@ prior_p, prior_b = 0.25, 0.75
 mu_p, mu_b = 50, 0
 sigma_p, sigma_b = 12, 12
 x = 25
-print(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
+# print(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
 
 # Q2.1 Challenge
 vot = [-25, 0, 25, 50, 75]
 posteriors = []
 for x in vot:
     posteriors.append(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
-print(posteriors)
+# print(posteriors)
 
-plt.plot(vot, posteriors)
-plt.show()
+# plt.plot(vot, posteriors)
+# plt.show()
 
 # Q2.1 for fun
 # posteriors = []
@@ -37,3 +37,37 @@ plt.show()
 #
 # plt.plot(range(-100, 110, 10), posteriors)
 # plt.show()
+
+# Q2.2
+prior_p, prior_b = 0.25, 0.75
+mu_p, mu_b = 50, 0
+sigma_p, sigma_b = 12, 8
+x = 25
+# print(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
+
+# Q2.2 Challenge
+vot = [-25, 0, 25, 50, 75]
+posteriors = []
+for x in vot:
+    posteriors.append(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
+# print(posteriors)
+
+# plt.plot(vot, posteriors)
+# plt.show()
+
+# Q2.3
+prior_p, prior_b = 0.25, 0.75
+mu_p, mu_b = 50, 0
+sigma_p, sigma_b = 12, 8
+x = -200
+# print(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
+
+# Q2.3 Challenge
+vot = [-50, -100, -150, -200]
+posteriors = []
+for x in vot:
+    posteriors.append(get_posterior(prior_p, mu_p, sigma_p, prior_b, mu_b, sigma_b, x))
+print(posteriors)
+
+plt.plot(vot, posteriors)
+plt.show()
